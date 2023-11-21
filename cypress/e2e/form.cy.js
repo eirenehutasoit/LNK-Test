@@ -30,8 +30,6 @@ describe('Form Testing', () => {
 
 
       // select rate
-// Example: Click on 1 star in the given container
-
     const randomNumber = Cypress._.random(1, 5);
 
     cy.get(`[aria-label="${randomNumber} Star"][role="radio"]`).click()
@@ -46,8 +44,7 @@ describe('Form Testing', () => {
       // Submit the form
       cy.get('[data-automation-id="submitButton"]').click();
   
-      // Wait for the form submission to complete (you might need to adjust the selector based on the actual behavior of the website)
-    //   cy.get('.confirmation-message', { timeout: 10000 }).should('be.visible');
+
     });
   });
   
